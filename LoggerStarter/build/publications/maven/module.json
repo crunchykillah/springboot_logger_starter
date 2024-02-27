@@ -1,0 +1,124 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.technokratos",
+    "module": "loggerstarter",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "loggerstarter-0.0.1-SNAPSHOT-plain.jar",
+          "url": "loggerstarter-0.0.1-SNAPSHOT-plain.jar",
+          "size": 4628,
+          "sha512": "f038a76368e9ea846dd0f75585b8fa193bd1645fc51c4dee7626d7f4cd71ac456c3a89049e75930b6d3db236c5dce8d7f91a5437e69d870ae34ba8ef4b3e2da8",
+          "sha256": "10e1afa844a21015ede264f8e398e8872d949fd0d981a15340c3f31d08539ef9",
+          "sha1": "ffa6b8b87634b641b2264c5021d06444ef53b3de",
+          "md5": "cff555a0c0b16d02dc12ba00b0ea1ab0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-aop",
+          "version": {
+            "requires": "3.2.1"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework.boot",
+              "module": "spring-boot-starter-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web",
+          "excludes": [
+            {
+              "group": "org.springframework.boot",
+              "module": "spring-boot-starter-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.5"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework.boot",
+              "module": "spring-boot-starter-logging"
+            }
+          ]
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-core",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework.boot",
+              "module": "spring-boot-starter-logging"
+            }
+          ]
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework.boot",
+              "module": "spring-boot-starter-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "loggerstarter-0.0.1-SNAPSHOT-plain.jar",
+          "url": "loggerstarter-0.0.1-SNAPSHOT-plain.jar",
+          "size": 4628,
+          "sha512": "f038a76368e9ea846dd0f75585b8fa193bd1645fc51c4dee7626d7f4cd71ac456c3a89049e75930b6d3db236c5dce8d7f91a5437e69d870ae34ba8ef4b3e2da8",
+          "sha256": "10e1afa844a21015ede264f8e398e8872d949fd0d981a15340c3f31d08539ef9",
+          "sha1": "ffa6b8b87634b641b2264c5021d06444ef53b3de",
+          "md5": "cff555a0c0b16d02dc12ba00b0ea1ab0"
+        }
+      ]
+    }
+  ]
+}
